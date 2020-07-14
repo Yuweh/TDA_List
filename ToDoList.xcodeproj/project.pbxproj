@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90330B1B24BDD78E000345E9 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90330B1A24BDD78E000345E9 /* Goal.swift */; };
+		90330B1D24BDD825000345E9 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90330B1C24BDD825000345E9 /* GoalCell.swift */; };
 		9042589A24BD8C75004D2EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042589924BD8C75004D2EF6 /* AppDelegate.swift */; };
 		9042589C24BD8C75004D2EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042589B24BD8C75004D2EF6 /* ViewController.swift */; };
 		9042589F24BD8C75004D2EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9042589D24BD8C75004D2EF6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90330B1A24BDD78E000345E9 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		90330B1C24BDD825000345E9 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		9042589624BD8C75004D2EF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9042589924BD8C75004D2EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9042589B24BD8C75004D2EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90330B1E24BDE372000345E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9042588D24BD8C75004D2EF6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,13 +65,13 @@
 		9042589824BD8C75004D2EF6 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				90330B1E24BDE372000345E9 /* Extensions */,
 				904258AE24BD9D0D004D2EF6 /* Model */,
 				904258AD24BD9D07004D2EF6 /* ViewModels */,
 				904258AC24BD9D00004D2EF6 /* Controllers */,
 				904258AB24BD9CEB004D2EF6 /* Views */,
 				9042589924BD8C75004D2EF6 /* AppDelegate.swift */,
 				9042589B24BD8C75004D2EF6 /* ViewController.swift */,
-				9042589D24BD8C75004D2EF6 /* Main.storyboard */,
 				904258A024BD8C77004D2EF6 /* Assets.xcassets */,
 				904258A224BD8C77004D2EF6 /* LaunchScreen.storyboard */,
 				904258A524BD8C77004D2EF6 /* Info.plist */,
@@ -71,6 +82,7 @@
 		904258AB24BD9CEB004D2EF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9042589D24BD8C75004D2EF6 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,6 +90,7 @@
 		904258AC24BD9D00004D2EF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				90330B1C24BDD825000345E9 /* GoalCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,6 +105,7 @@
 		904258AE24BD9D0D004D2EF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				90330B1A24BDD78E000345E9 /* Goal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90330B1D24BDD825000345E9 /* GoalCell.swift in Sources */,
+				90330B1B24BDD78E000345E9 /* Goal.swift in Sources */,
 				9042589C24BD8C75004D2EF6 /* ViewController.swift in Sources */,
 				9042589A24BD8C75004D2EF6 /* AppDelegate.swift in Sources */,
 			);
@@ -315,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
