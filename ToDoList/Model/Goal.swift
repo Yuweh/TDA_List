@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum GoalType: Int {
-    case short
-    case long
+enum GoalType: String {
+    case longTerm = "Long Term"
+    case shortTerm = "Short Term"
 }
 
 struct Goal {
