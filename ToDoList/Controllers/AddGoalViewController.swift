@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddGoalViewController: UIViewController {
+class AddGoalViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var closeBtn: UIButton!
     @IBOutlet weak var textView: UITextView!
@@ -16,14 +16,34 @@ class AddGoalViewController: UIViewController {
     @IBOutlet weak var longTermBtn: UIButton!
     @IBOutlet weak var createGoalLbl: UIButton!
     
+    var goalType: GoalType = .shortTerm
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.createGoalLbl.bindToKeyboard()
+        self.textView.delegate = self
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        self.textView.text = ""
+        self.textView.textColor = UIColor.black
+    }
+    
+    @IBAction func shortTermBtnWasPressed(_ sender: Any) {
+        goalType = .shortTerm
+        shortTermBtn.setSelectedColor()
+        longTermBtn.setDeselectedColor()
+    }
+    
+    @IBAction func longTermBtnWasPressed(_ sender: Any) {
+        goalType = .longTerm
+        longTermBtn.setSelectedColor()
+        shortTermBtn.setDeselectedColor()
     }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
+
 }
